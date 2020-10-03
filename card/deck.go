@@ -50,5 +50,6 @@ func newDeckFromFile(filename string) deck {
 		os.Exit(1)
 	}
 
-	return deck(strings.Split(string([]byte(bs)), ","))
+	s := (strings.Split(string(bs), ","))
+	return deck(s)
 }
