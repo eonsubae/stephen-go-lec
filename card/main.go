@@ -3,18 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// cards := NewDeck()
-
-	// hand, remainingDeck := deal(cards, 5)
-
-	// fmt.Println("Print start")
-	// hand.print()
-	// fmt.Println("Hand is printed")
-	// remainingDeck.print()
-	// fmt.Println("Remaining is printed")
-
-	greeting := "Hi there!"
-	fmt.Println([]byte(greeting))
+	cards := NewDeck()
+	fmt.Println(cards.toString())
 }
 
 func newCard() string {
