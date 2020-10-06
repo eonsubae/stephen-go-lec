@@ -25,6 +25,12 @@ func main() {
 
 	jim.updateName("Jimmy")
 	jim.print()
+
+	mySlice := []string{"Hi", "There", "How", "Are", "You"}
+
+	updateSlice(mySlice)
+
+	fmt.Println("My slice : ", mySlice)
 }
 
 func (pointerToPerson *person) updateName(newFirstName string) {
@@ -33,4 +39,8 @@ func (pointerToPerson *person) updateName(newFirstName string) {
 
 func (p person) print() {
 	fmt.Printf("%+v", p)
+}
+
+func updateSlice(s []string) {
+	s[0] = "Bye"
 }
