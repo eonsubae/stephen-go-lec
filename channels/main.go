@@ -19,6 +19,11 @@ func main() {
 	for _, link := range links {
 		go checkLink(link, c)
 	}
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
 
 	fmt.Println(<-c)
 }
